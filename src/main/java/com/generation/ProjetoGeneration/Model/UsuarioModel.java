@@ -20,7 +20,7 @@ public class UsuarioModel {
     private String email;
     private String foto;
 
-    @OneToMany(mappedBy = "usuario", cascade = CascadeType.REMOVE)
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "usuario", cascade = CascadeType.REMOVE)
     @JsonIgnoreProperties("usuario")
     private List<PostagemModel> postagem;
 

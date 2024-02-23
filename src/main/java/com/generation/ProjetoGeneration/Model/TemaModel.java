@@ -14,7 +14,7 @@ public class TemaModel {
     @NotNull(message = "O campo descrição é obrigatorio")
     private String descricao;
 
-    @OneToMany(mappedBy = "tema", cascade = CascadeType.ALL)
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "tema", cascade = CascadeType.REMOVE)
     @JsonIgnoreProperties("tema")
     private List<PostagemModel>postagem;
 
