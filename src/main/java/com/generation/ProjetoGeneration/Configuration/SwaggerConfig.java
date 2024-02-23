@@ -25,9 +25,9 @@ public class SwaggerConfig {
                         .title("Projeto Generation Nataly Carvalho")
                         .description("Projeto Generation")
                         .version("V0.0.1")
-                        .license(new License().name("Nataly Carvalho").url("https://github.com/Nataly-Carvalho"))
+                        .license(new License().name("Nataly Carvalho").url("https://github.com/Nataly-Carvalho/ProjetoGeneration"))
                         .contact(new Contact()
-                                .name("Repositorio do blog")
+                                .name("Repositorio do projeto")
                                 .url("https://github.com/Nataly-Carvalho/ProjetoGeneration")
                                 .email("natalycarvalho.dev@gmail.com")));
     }

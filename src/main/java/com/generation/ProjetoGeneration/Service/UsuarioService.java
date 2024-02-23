@@ -31,7 +31,7 @@ public class UsuarioService {
 
             if ((buscaUsuario.isPresent()) && (buscaUsuario.get().getId() != usuario.getId()))
                 throw new ResponseStatusException(
-                        HttpStatus.BAD_REQUEST, "Usuário já existe!", null);
+                        HttpStatus.BAD_REQUEST, "Email já existe!", null);
 
             return Optional.ofNullable(usuarioRepository.save(usuario));
         }
